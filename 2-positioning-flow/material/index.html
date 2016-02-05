@@ -9,6 +9,7 @@
 			body{
 				font-family: roboto;
 				font-size: 12px;
+				position: relative;
 			}
 
 			#container
@@ -20,6 +21,10 @@
 				border-radius: 10px;
 				padding: 10px;
 				font-size: 0;	/* remove inline-block spacing*/
+				position: fixed;
+				top: 200px;
+				height: 150px;
+				z-index: -1;
 			}
 			.box{
 				display: inline-block;
@@ -32,16 +37,35 @@
 				font-size: 35px;
 			}
 
+			#box1{
+				position: relative;
+				top: 400px;
+			}
+
+			#box2{
+				position: relative;
+				top: 250px;
+
+			}
+
+			#box3{
+				position: relative;
+				top: 150px;
+
+			}
+			#box4{
+				position: relative;
+
+			}
+
 		</style>
 	</head>
 	<body>
+		<div id="box1" class="box"><h2>1</h2></div>
+		<div id="box2" class="box"><h2>2</h2></div>
+		<div id="box3" class="box"><h2>3</h2></div>
+		<div id="box4" class="box"><h2>4</h2></div>
 		<div id="container">
-
-			<div id="box1" class="box"><h2>1</h2></div>
-			<div id="box2" class="box"><h2>2</h2></div>
-			<div id="box3" class="box"><h2>3</h2></div>
-			<div id="box4" class="box"><h2>4</h2></div>
-
 		</div>
 	</body>
 </html>
